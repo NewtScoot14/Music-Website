@@ -1,134 +1,139 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-html{
-    font-size: 25px;
-}
-
-h1, h2, h3{
+h1, h2, h3 {
     border: 10px double black;
-    border-radius: 20px 20px 20px 20px ;
-    margin: 30px 30px;
+    border-radius: 20px;
+    margin: 30px;
     border-width: 1em;
-    padding: 0 0 0 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique;
     font-weight: bold;
     color: white;
-    background-color: rgb(128, 43, 0, 0.9);
+    background-color: rgba(128, 43, 0, 0.9);
     text-align: center;
 }
 
-
-body{
-    
+body {
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    font-display: center;
     text-align: center;
-    background-image:  url(../images/SproutLogo.jpg);
+    background-image: url(../images/SproutLogo.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
 
-
-.logo{
+.logo {
     color: rgb(20, 20, 20);
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: bold;
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem;
 }
 
-.header-nav{
+/* .header-nav {
     display: flex;
     justify-content: space-between; 
     align-items: center;
     background-color: white;
 }
 
-.header-nav-menu{
+.header-nav-menu {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: flex-end;
-
 }    
 
-.header-menu-item{
+.header-menu-item {
     margin-right: 1.5rem;
-    text-decoration: none;
-    color: black;
-}
+} */
 
 .header-menu-item a {
     text-decoration: none;
     color: black;
 }
 
-
-
-.bg-color{
+.bg-color {
     background-color: rgba(10, 10, 10, 0.7);
-    border-radius: 25px;;
+    border-radius: 25px;
     padding: 20px;
-    margin: 40px 20px 20px 20px;
+    margin: 40px 20px;
     background-image: url(../gifs/music-levels.gif);
     background-size: contain;
-
 }
 
-.bg-color-footer{
+.bg-color-footer {
     background-color: rgba(10, 10, 10, 0.7);
-    border-radius: 25px;;
+    border-radius: 25px;
     padding: 20px;
-    margin: 40px 20px 20px 20px;
-
+    margin: 40px 20px;
 }
 
 .Song-list-container {
     list-style: none;
     padding: 15px;
- 
 }
 
-.text-color{
+.text-color {
     color: white;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 2rem;
     margin: 0 0 10px 0;
 }
 
-
-footer{ 
-    color: rgb(231, 20, 20);
-    font-weight: bold;
-    
+@media (max-width: 768px) {
+    .text-color {
+        font-size: 1.5rem; /* Smaller font size on smaller screens */
+    }
 }
 
-.footer-nav-column{
+
+
+footer { 
+    color: rgb(231, 20, 20);
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: rgba(16, 15, 15, 0.8);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    display: none; 
+}
+
+.footer-nav-column {
     text-decoration: none;
     list-style: none;
 }
 
-.footer-nav-item{
+.footer-nav-item {
     text-decoration: none;
 }
 
-.fa-solid{
+.fa-solid {
     color: orange;
     box-shadow: 3px 5px 10px 8px rgba(18, 2, 2, 0.59);
 }
 
 .about-container {
-    background-color: #f8f9fa; 
-    padding: 20px;
-    border-radius: 40px;
-    margin: 20px ;
+    background-color: rgba(248, 249, 250, 0.8);
+    border-radius: 10px;
+    margin: 40px 0;
 }
 
 .about-container h3 {
@@ -136,7 +141,7 @@ footer{
 }
 
 .about-container p {
-    color: #555; 
+    color: black; 
 }
 
 .intro-container {
@@ -145,12 +150,8 @@ footer{
     margin: 40px 0;
 }
 
-.intro-container h3 {
-    color: #333; 
-}
-
 .intro-container p {
-    color: #555;
+    color: black;
 }
 
 .faq-container {
@@ -183,36 +184,52 @@ footer{
 }
 
 .card-body {
-    color: #555; 
+    color: #f8f1f1; 
 }
 
-
-/*.carousel{
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    margin: 100px;
-    
+/* Carousel styles */
+.carousel {
+    width: 100%; /* Ensure carousel takes full width */
+    margin: 20px auto; /* Center carousel */
 }
 
-.carousel-control-prev, .carousel-control-next, .carousel-indicators{
+.carousel-control-prev, .carousel-control-next, .carousel-indicators {
     background-color: rgba(0, 0, 0, 0.10);
 }
 
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target] {
     background-color: rgb(249, 243, 243);
-
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
-.carousel-control-next-icon{
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .header-nav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .header-menu-item {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .text-color {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .about-container, .intro-container, .faq-container {
+        margin: 20px; /* Reduce margin on smaller screens */
+    }
+}

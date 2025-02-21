@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Stories - My Music Website</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .user-story {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+        }
+        .user-story h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .user-story p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>User Stories - My Music Website</h1>
+
+    <section class="user-story">
+        <h3>User Story 1: Discover Music via SoundCloud Embed</h3>
+        <p><strong>As the</strong> website owner (musician), <strong>I want to</strong> embed a SoundCloud player with a featured track directly on the website <strong>so that</strong> visitors can immediately sample my music and get a feel for my style, increasing the likelihood they'll explore more of my work.</p>
+    </section>
+
+    <section class="user-story">
+        <h3>User Story 2: Navigate to Music on Preferred Platform</h3>
+        <p><strong>As the</strong> website owner (musician), <strong>I want to</strong> provide clear and easy-to-find links to my music on various platforms like SoundCloud, Spotify, and Apple Music <strong>so that</strong> fans can easily listen to my music on their preferred streaming service, boosting my streams and visibility on those platforms.</p>
+    </section>
+
+    <section class="user-story">
+        <h3>User Story 3: Subscribe to Mailing List for Updates</h3>
+        <p><strong>As the</strong> website owner (musician), <strong>I want to</strong> include a simple and effective mailing list subscription form <strong>so that</strong> I can collect email addresses from interested fans and directly communicate with them about new releases, events, and other news, fostering a stronger connection and driving engagement.</p>
+    </section>
+
+</body>
+</html>
