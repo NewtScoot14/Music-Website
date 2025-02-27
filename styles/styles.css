@@ -23,6 +23,16 @@ body {
     background-position: center;
 }
 
+label{
+    color: white;
+}
+
+p{
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
 .logo {
     color: rgb(20, 20, 20);
     text-decoration: none;
@@ -31,24 +41,6 @@ body {
     margin: 1rem;
 }
 
-/* .header-nav {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    background-color: white;
-}
-
-.header-nav-menu {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-}    
-
-.header-menu-item {
-    margin-right: 1.5rem;
-} */
 
 .header-menu-item a {
     text-decoration: none;
@@ -59,8 +51,8 @@ body {
     background-color: rgba(10, 10, 10, 0.7);
     border-radius: 25px;
     padding: 20px;
-    margin: 40px 20px;
-    background-image: url(../gifs/music-levels.gif);
+    margin: 20px auto;
+    background-image: url(../gifs/Black-hole-wave.gif);
     background-size: contain;
 }
 
@@ -89,13 +81,6 @@ body {
     }
 }
 
-
-
-footer { 
-    color: rgb(231, 20, 20);
-    font-weight: bold;
-}
-
 .navbar {
     background-color: rgba(16, 15, 15, 0.8);
     padding: 10px;
@@ -109,11 +94,12 @@ footer {
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .section {
     display: none; 
+    text-decoration: none;
 }
 
 .footer-nav-column {
@@ -147,7 +133,8 @@ footer {
 .intro-container {
     background-color: rgba(248, 249, 250, 0.8);
     border-radius: 10px;
-    margin: 40px 0;
+    margin: 100px 0;
+   
 }
 
 .intro-container p {
@@ -166,6 +153,11 @@ footer {
     text-align: center;
 }
 
+.container-paragraph {
+    margin: 25px; 
+    padding: 25px;
+}
+
 .card {
     margin-bottom: 10px; 
 }
@@ -180,7 +172,7 @@ footer {
 }
 
 .btn-link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .card-body {

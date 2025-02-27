@@ -36,9 +36,11 @@
     <div id="intro-section" class="section intro-container">
         <div class="container">
             <h1>Introduction</h1>
-            <p>Hey there! I’m Newton Frias, and I’m excited to share my musical journey with you. This is the place where you can explore my latest tracks, discover the stories behind my songs, and get a glimpse into my creative process.</p>
-            <p>Here, you’ll find my music and exclusive content just for you. Whether you’re a long-time fan or new to my sound, I hope you’ll feel inspired and connected through my art.</p>
-            <p>Join me as I share my passion for music, and let’s embark on this journey together. Thank you for being a part of my world! Enjoy the music!</p>
+            <div class="container-paragraph">
+                <p>Hey there! I’m Newton Frias, and I’m excited to share my musical journey with you. This is the place where you can explore my latest tracks, discover the stories behind my songs, and get a glimpse into my creative process.</p>
+                <p>Here, you’ll find my music and exclusive content just for you. Whether you’re a long-time fan or new to my sound, I hope you’ll feel inspired and connected through my art.</p>
+                <p>Join me as I share my passion for music, and let’s embark on this journey together. Thank you for being a part of my world! Enjoy the music!</p>
+            </div>
         </div>
     </div>
 
@@ -97,7 +99,9 @@
     <div id="about-section" class="section about-container">
         <div class="container">
             <h3>About My Music</h3>
-            <p>Welcome to my music website! I’m Newton Frias, an artist dedicated to creating sounds that resonate with the heart and soul. My music blends various genres, drawing inspiration from personal experiences, emotions, and the world around me. Here, you’ll find a collection of my albums, singles, and exclusive content that showcases my journey as a musician. I believe in the power of music to connect people, evoke feelings, and tell stories. Whether you’re here to explore my latest tracks or to dive into the stories behind my songs, I hope you find something that speaks to you. Thank you for joining me on this musical adventure!</p>
+            <div class="container-paragraph">
+                <p>Welcome to my music website! I’m Newton Frias, an artist dedicated to creating sounds that resonate with the heart and soul. My music blends various genres, drawing inspiration from personal experiences, emotions, and the world around me. Here, you’ll find a collection of my albums, singles, and exclusive content that showcases my journey as a musician. I believe in the power of music to connect people, evoke feelings, and tell stories. Whether you’re here to explore my latest tracks or to dive into the stories behind my songs, I hope you find something that speaks to you. Thank you for joining me on this musical adventure!</p>
+            </div>
         </div>
     </div>
 
@@ -195,17 +199,16 @@
     <script src="https://kit.fontawesome.com/113167c594.js" crossorigin="anonymous"></script>
     <script>
         function showSection(sectionId) {
-            // Hide all sections
+    
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => {
                 section.style.display = 'none';
             });
-            // Show the selected section
+          
             const selectedSection = document.getElementById(sectionId);
             selectedSection.style.display = 'block';
         }
 
-        // Show the introduction section by default
         document.addEventListener('DOMContentLoaded', () => {
             showSection('intro-section');
         });
