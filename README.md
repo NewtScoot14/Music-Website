@@ -6,4 +6,4 @@
 <h2>Improvements:</h2>
 <p> Can be improved upon by given it a better interaction for users to navigate the pages, a smoother gui. Snippets of the songs i am working on under title of each song, and want to add full songs as well for better distribution of songs. at some point i also like to add a merchandize side of the webisite with diiferent products for sale.</p>
 
-
+<h3>Link: https://newtscoot14.github.io/Music-Website/</h3>
